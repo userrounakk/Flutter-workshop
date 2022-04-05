@@ -42,7 +42,7 @@ class HomePage extends StatelessWidget {
             itemBuilder: (BuildContext context, index) {
               return ListTile(
                 leading: CircleAvatar(
-                  child: Text(toDoItems[index]['title'].toString()),
+                  child: Text(toDoItems[index]['id'].toString()),
                 ),
                 title: Text(toDoItems[index]['title'].toString()),
                 subtitle: Text(toDoItems[index]['description'].toString()),
