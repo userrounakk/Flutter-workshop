@@ -72,6 +72,22 @@ class HomePage extends StatelessWidget {
         title: const Text('Url Launcher'),
         backgroundColor: const Color(0xffFA6167),
       ),
+      drawer: Drawer(
+        child: ListView(
+          children: const [
+            UserAccountsDrawerHeader(
+              currentAccountPicture: CircleAvatar(
+                child: Text('R'),
+              ),
+              accountName: Text(
+                'Rounak Agrawal',
+                style: TextStyle(color: Colors.white),
+              ),
+              accountEmail: Text('contact@rounak.com.np'),
+            ),
+          ],
+        ),
+      ),
       body: SizedBox(
         width: MediaQuery.of(context).size.width,
         child: SingleChildScrollView(
